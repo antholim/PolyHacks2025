@@ -1,0 +1,2700 @@
+{
+    "zone_1": {
+        "regulations": [
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all with at most 2 artic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "3 of 50 to 65 cm inclusively",
+                "note": "Not specified",
+                "fishing_device": "All except angling only with a single hook, without natural bait, for a maximum of 3 hooks on the line"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_2": {
+        "regulations": [
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Whitefish",
+                "catch_limit": "150 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_3": {
+        "regulations": [
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "No limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_4": {
+        "regulations": [
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Fishing with dip nets and / or plaice fishing only."
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing, spear fishing while swimming, landing net fishing and plaice fishing"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "2",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing and spear fishing while swimming"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_5": {
+        "regulations": [
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_6": {
+        "regulations": [
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Fishing with dip nets and / or plaice fishing only."
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing, spear fishing while swimming, landing net fishing and plaice fishing"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing and spear fishing while swimming"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_7": {
+        "regulations": [
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Atlantic tomcod",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_8": {
+        "regulations": [
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Shad",
+                "catch_limit": "5",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10. For the fluvial portion of the area, there is no catch limit.",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_9": {
+        "regulations": [
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Fishing with dip nets and / or plaice fishing only."
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing, spear fishing while swimming, landing net fishing and plaice fishing"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all with at most 2 arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing and spear fishing while swimming"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_10": {
+        "regulations": [
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Whitefish",
+                "catch_limit": "5",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all with at most 2 arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_11": {
+        "regulations": [
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all with at most 2 arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Whitefish",
+                "catch_limit": "5",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_12": {
+        "regulations": [
+            {
+                "species": "Bass",
+                "catch_limit": "6 en tout",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all with at most 2 arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_13_east": {
+        "regulations": [
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_13_west": {
+        "regulations": [
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_14": {
+        "regulations": [
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_15": {
+        "regulations": [
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Fishing with dip nets and / or plaice fishing only."
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing, spear fishing while swimming, landing net fishing and plaice fishing"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all, including a maximum of 2 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Angling, bow fishing, crossbow fishing and spear fishing while swimming"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_16": {
+        "regulations": [
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "8 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "15 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Whitefish",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "8 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_17": {
+        "regulations": [
+            {
+                "species": "Pike",
+                "catch_limit": "8 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "15 in all or 4 kg + 1 brook trout whichever is reached first",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Whitefish",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "8 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            }
+        ]
+    },
+    "zone_18": {
+        "regulations": [
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including a maximum of 2 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "60",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including a maximum of 2 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_19": {
+        "regulations": [
+            {
+                "species": "All species",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_19_southA": {
+        "regulations": [
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including a maximum of 5 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "6",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "3 from 50 to 65 cm inclusively",
+                "note": "Not specified",
+                "fishing_device": "All except angling only with a single hook, without natural bait, for a maximum of 3 hooks on the line"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including a maximum of 5 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "6",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_19_southB": {
+        "regulations": [
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including a maximum of 5 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "6",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "3 from 50 to 65 cm inclusively",
+                "note": "Not specified",
+                "fishing_device": "All except angling only with a single hook, without natural bait, for a maximum of 3 hooks on the line"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including a maximum of 5 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "6",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "same as the zone",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_20": {
+        "regulations": [
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "3 from 50 to 65 cm inclusively",
+                "note": "Not specified",
+                "fishing_device": "All except angling only with a single hook, without natural bait, for a maximum of 3 hooks on the line"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_21": {
+        "regulations": [
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "5 in all",
+                "note": "The bag limit is 1 or 15 char in parts of Area 21.",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "Fishing prohibited",
+                "note": "Landlocked salmon are considered absent from zone 21. Fishing for landlocked salmon is still permitted in 2 bodies of water in exception in zone 21, including a sector of the Saguenay River and a sector of the Aux Outardes River.",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "The limit is 60 Smelt in parts of the area 21.",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling or fly fishing"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_22_north": {
+        "regulations": [
+            {
+                "species": "Brook Trout",
+                "catch_limit": "15 or 5 kg + 1 brook trout, whichever is reached first",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all of which no more than 1 of 60 cm or more",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_22_south": {
+        "regulations": [
+            {
+                "species": "Brook Trout",
+                "catch_limit": "15 + 1 or 2.5 kg according brook is reached first",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "8 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_23_north": {
+        "regulations": [
+            {
+                "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Artic Char",
+                "catch_limit": "5",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Brook Trout",
+                "catch_limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "4",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "0 retained",
+                "note": "Any person who wishes to fish for lake trout during this period must use the services of an outfitter operating on the territory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "No limit",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            }
+        ]
+    },
+    "zone_23_south": {
+        "regulations": [
+            {
+                "species": "Brook Trout",
+                "catch_limit": "15 or 5 kg + 1 brook trout, whichever is reached first",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "0 retained",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_24": {
+        "regulations": [
+            {
+                "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Artic Char",
+                "catch_limit": "5",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Brook Trout",
+                "catch_limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "4",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "No limit",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            }
+        ]
+    },
+    "zone_25": {
+        "regulations": [
+            {
+                "species": "American Eel",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Whitefish",
+                "catch_limit": "12",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "1",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "5 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_26": {
+        "regulations": [
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all, including not more than 2 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "10",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_27": {
+        "regulations": [
+            {
+                "species": "Atlantic tomcod",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "10 in all, including not more than 2 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Cutthroat Trout and Brown Trout",
+                "catch_limit": "5 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "3",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Trout",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Black Crappie",
+                "catch_limit": "30",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Bass",
+                "catch_limit": "6 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Muskellunge and Tiger Muskellunge",
+                "catch_limit": "2 in all",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_28": {
+        "regulations": [
+            {
+                "species": "Shad",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Striped Bass",
+                "catch_limit": "Fishing prohibited",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all, including not more than 2 Arctic char",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "2 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "2",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Burbot",
+                "catch_limit": "No limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Atlantic salmon",
+                "catch_limit": "1 small fish caught and retained or 3 caught and released according to the quota caught first",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.\nElsewhere than in salmon rivers.\n\nSalmon fishing licence mandatory.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "6 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Sturgeon",
+                "catch_limit": "1 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    },
+    "zone_29": {
+        "regulations": [
+            {
+                "species": "Char (arctic char, brook trout)",
+                "catch_limit": "20 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Lake Trout and Splake Trout",
+                "catch_limit": "3 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Landlocked Salmon",
+                "catch_limit": "6",
+                "note": "Not specified",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Rainbow Smelt",
+                "catch_limit": "120",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Yellow Perch",
+                "catch_limit": "50",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Pike",
+                "catch_limit": "10 in all",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            },
+            {
+                "species": "Walleye and Sauger",
+                "catch_limit": "8 in all",
+                "note": "A length limit may apply for this species. Check the applicable limits for this zone.",
+                "fishing_device": "Angling only"
+            },
+            {
+                "species": "Other species",
+                "catch_limit": "no limit",
+                "note": "Not specified",
+                "fishing_device": "Not specified"
+            }
+        ]
+    }
+}
