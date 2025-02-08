@@ -1,29 +1,36 @@
 import React, { useState, useRef } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
-import { Camera } from "expo-camera";
+import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import * as ImagePicker from "expo-image-picker";
 import { identifyFish } from "../services/fishIdentificationService";
 
 export default function CameraScreen() {
-  const [hasPermission, setHasPermission] = useState(null);
-  const [cameraType, setCameraType] = useState(Camera.Constants.Type.back);
-  const [capturedImage, setCapturedImage] = useState(null);
-  const [identificationResult, setIdentificationResult] = useState(null);
-  const cameraRef = useRef(null);
+  const [facing, setFacing] = useState<CameraType>('back');
+  const [permission, requestPermission] = useCameraPermissions();
+  const [capturedImage, setCapturedImage] = useState<string | null>(null);
+  const [identificationResult, setIdentificationResult] = useState<any>(null);
 
-  React.useEffect(() => {
-    (async () => {
-      const { status } = await Camera.requestPermissionsAsync();
-      setHasPermission(status === "granted");
-    })();
-  }, []);
+  if (!permission) {
+    return <View />;
+  }
+
+  if (!permission.granted) {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.message}>We need your permission to show the camera</Text>
+        <TouchableOpacity style={styles.button} onPress={requestPermission}>
+          <Text style={styles.buttonText}>Grant Permission</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+
+  const toggleCameraFacing = () => {
+    setFacing(current => (current === 'back' ? 'front' : 'back'));
+  };
 
   const takePicture = async () => {
-    if (cameraRef.current) {
-      const photo = await cameraRef.current.takePictureAsync();
-      setCapturedImage(photo.uri);
-      identifyFishInImage(photo.uri);
-    }
+    // Implementation will come in next version of expo-camera
   };
 
   const pickImage = async () => {
@@ -34,13 +41,13 @@ export default function CameraScreen() {
       quality: 1,
     });
 
-    if (!result.cancelled) {
-      setCapturedImage(result.uri);
-      identifyFishInImage(result.uri);
+    if (!result.canceled) {
+      setCapturedImage(result.assets[0].uri);
+      identifyFishInImage(result.assets[0].uri);
     }
   };
 
-  const identifyFishInImage = async (imageUri) => {
+  const identifyFishInImage = async (imageUri: string) => {
     try {
       const result = await identifyFish(imageUri);
       setIdentificationResult(result);
@@ -48,13 +55,6 @@ export default function CameraScreen() {
       console.error("Error identifying fish:", error);
     }
   };
-
-  if (hasPermission === null) {
-    return <View />;
-  }
-  if (hasPermission === false) {
-    return <Text>No access to camera</Text>;
-  }
 
   return (
     <View style={styles.container}>
@@ -72,12 +72,6 @@ export default function CameraScreen() {
               <Text style={styles.resultText}>
                 Habitat: {identificationResult.habitat}
               </Text>
-              <Text style={styles.resultText}>
-                Size: {identificationResult.size}
-              </Text>
-              <Text style={styles.resultText}>
-                Fishing Tips: {identificationResult.fishingTips}
-              </Text>
             </View>
           )}
           <TouchableOpacity
@@ -88,16 +82,16 @@ export default function CameraScreen() {
           </TouchableOpacity>
         </View>
       ) : (
-        <Camera style={styles.camera} type={cameraType} ref={cameraRef}>
+        <CameraView style={styles.camera} facing={facing}>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button} onPress={takePicture}>
-              <Text style={styles.buttonText}>Take Picture</Text>
+            <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
+              <Text style={styles.buttonText}>Flip Camera</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={pickImage}>
-              <Text style={styles.buttonText}>Pick from Gallery</Text>
+              <Text style={styles.buttonText}>Gallery</Text>
             </TouchableOpacity>
           </View>
-        </Camera>
+        </CameraView>
       )}
     </View>
   );
@@ -112,28 +106,31 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flex: 1,
-    backgroundColor: "transparent",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    margin: 20,
+    flexDirection: 'row',
+    backgroundColor: 'transparent',
+    margin: 64,
   },
   button: {
-    backgroundColor: "white",
-    borderRadius: 5,
+    flex: 1,
+    alignSelf: 'flex-end',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
     padding: 15,
-    paddingHorizontal: 20,
-    alignSelf: "flex-end",
-    margin: 20,
+    borderRadius: 5,
+    margin: 5,
   },
   buttonText: {
-    fontSize: 14,
-    fontWeight: "bold",
-    color: "black",
+    fontSize: 18,
+    color: 'white',
+  },
+  message: {
+    textAlign: 'center',
+    padding: 20,
   },
   previewContainer: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 20,
   },
   preview: {
@@ -142,13 +139,15 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   resultContainer: {
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backgroundColor: 'rgba(0,0,0,0.7)',
     padding: 20,
     borderRadius: 10,
     marginBottom: 20,
+    width: '100%',
   },
   resultText: {
     fontSize: 16,
+    color: 'white',
     marginBottom: 5,
   },
 });
