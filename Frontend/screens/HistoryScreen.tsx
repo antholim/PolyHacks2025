@@ -1,7 +1,5 @@
-"use client"
-
 import { useState, useEffect } from "react"
-import { View, Text, FlatList, StyleSheet, Image } from "react-native"
+import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity } from "react-native"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 
 export default function HistoryScreen() {
@@ -22,6 +20,16 @@ export default function HistoryScreen() {
     }
   }
 
+  const deleteHistoryItem = async (id) => {
+    try {
+      const updatedHistory = history.filter((item) => item.id !== id)
+      setHistory(updatedHistory)
+      await AsyncStorage.setItem("fishHistory", JSON.stringify(updatedHistory))
+    } catch (error) {
+      console.error("Error deleting history item:", error)
+    }
+  }
+
   const renderHistoryItem = ({ item }) => (
     <View style={styles.historyItem}>
       <Image source={{ uri: item.imageUri }} style={styles.thumbnail} />
@@ -29,6 +37,9 @@ export default function HistoryScreen() {
         <Text style={styles.species}>{item.species}</Text>
         <Text style={styles.date}>{new Date(item.date).toLocaleString()}</Text>
       </View>
+      <TouchableOpacity style={styles.deleteButton} onPress={() => deleteHistoryItem(item.id)}>
+        <Text style={styles.deleteButtonText}>Delete</Text>
+      </TouchableOpacity>
     </View>
   )
 
@@ -89,5 +100,13 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#666",
   },
+  deleteButton: {
+    backgroundColor: "red",
+    padding: 10,
+    borderRadius: 5,
+  },
+  deleteButtonText: {
+    color: "white",
+    fontWeight: "bold",
+  },
 })
-

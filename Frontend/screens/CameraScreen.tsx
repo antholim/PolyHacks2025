@@ -13,6 +13,7 @@ export default function CameraScreen() {
   const [identificationResult, setIdentificationResult] = useState<any>(null);
   const [isCaptured, setIsCaptured] = useState(false);
   const navigation = useNavigation();
+  const cameraRef = useRef(null);
 
   if (!permission) {
     return <View />;
@@ -34,13 +35,32 @@ export default function CameraScreen() {
   };
 
   const takePicture = async () => {
-    setIsCaptured(true);
-    // Implementation will come in next version of expo-camera
-    // When implemented, add:
-    // setTimeout(() => {
-    //   navigation.navigate("FishInfo", { imageUri: photo.uri });
-    //   setIsCaptured(false);
-    // }, 500);
+    if (!cameraRef.current) return;
+    
+    try {
+      setIsCaptured(true);
+      
+      // Take the picture
+      const photo = await cameraRef.current.takePictureAsync({
+        quality: 1,
+        base64: false,
+        skipProcessing: true
+      });
+      
+      // Set the captured image
+      setCapturedImage(photo.uri);
+      
+      // Identify the fish in the captured image
+      await identifyFishInImage(photo.uri);
+      
+      // Navigate to the FishInfo screen with the image URI
+      setTimeout(() => {
+        setIsCaptured(false);
+      }, 500);
+    } catch (error) {
+      console.error("Error taking picture:", error);
+      setIsCaptured(false);
+    }
   };
 
   const pickImage = async () => {
@@ -56,7 +76,7 @@ export default function CameraScreen() {
       identifyFishInImage(result.assets[0].uri);
     }
   };
-
+  //Make API Call to identify fish in image
   const identifyFishInImage = async (imageUri: string) => {
     try {
       const result = await identifyFish(imageUri);
@@ -92,7 +112,11 @@ export default function CameraScreen() {
           </TouchableOpacity>
         </View>
       ) : (
-        <CameraView style={styles.camera} facing={facing}>
+        <CameraView 
+          style={styles.camera} 
+          facing={facing}
+          ref={cameraRef}
+        >
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.infoButton} onPress={() => navigation.navigate("FishInfo")}>
               <Ionicons name="information-circle-outline" size={24} color="white" />
