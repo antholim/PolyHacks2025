@@ -3,12 +3,16 @@ import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import * as ImagePicker from "expo-image-picker";
 import { identifyFish } from "../services/fishIdentificationService";
+import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export default function CameraScreen() {
   const [facing, setFacing] = useState<CameraType>('back');
   const [permission, requestPermission] = useCameraPermissions();
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
   const [identificationResult, setIdentificationResult] = useState<any>(null);
+  const [isCaptured, setIsCaptured] = useState(false);
+  const navigation = useNavigation();
 
   if (!permission) {
     return <View />;
@@ -30,7 +34,13 @@ export default function CameraScreen() {
   };
 
   const takePicture = async () => {
+    setIsCaptured(true);
     // Implementation will come in next version of expo-camera
+    // When implemented, add:
+    // setTimeout(() => {
+    //   navigation.navigate("FishInfo", { imageUri: photo.uri });
+    //   setIsCaptured(false);
+    // }, 500);
   };
 
   const pickImage = async () => {
@@ -84,14 +94,19 @@ export default function CameraScreen() {
       ) : (
         <CameraView style={styles.camera} facing={facing}>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
-              <Text style={styles.buttonText}>Flip Camera</Text>
+            <TouchableOpacity style={styles.infoButton} onPress={() => navigation.navigate("FishInfo")}>
+              <Ionicons name="information-circle-outline" size={24} color="white" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={pickImage}>
-              <Text style={styles.buttonText}>Gallery</Text>
+            <TouchableOpacity style={styles.button} onPress={takePicture} disabled={isCaptured}>
+              <Ionicons name="camera" size={32} color="white" />
             </TouchableOpacity>
           </View>
         </CameraView>
+      )}
+      {isCaptured && (
+        <View style={styles.processingOverlay}>
+          <Text style={styles.processingText}>Processing...</Text>
+        </View>
       )}
     </View>
   );
@@ -106,22 +121,24 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flex: 1,
-    flexDirection: 'row',
-    backgroundColor: 'transparent',
-    margin: 64,
+    backgroundColor: "transparent",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    margin: 20,
   },
   button: {
-    flex: 1,
-    alignSelf: 'flex-end',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    alignSelf: "flex-end",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 120, 255, 0.8)",
+    borderRadius: 30,
     padding: 15,
-    borderRadius: 5,
-    margin: 5,
   },
-  buttonText: {
-    fontSize: 18,
-    color: 'white',
+  infoButton: {
+    alignSelf: "flex-end",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    borderRadius: 30,
+    padding: 10,
   },
   message: {
     textAlign: 'center',
@@ -149,5 +166,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'white',
     marginBottom: 5,
+  },
+  processingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  processingText: {
+    color: "white",
+    fontSize: 18,
+    fontWeight: "bold",
   },
 });
