@@ -1,28 +1,65 @@
 import React, { useState, useRef } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
-import { Camera } from "expo-camera";
+import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import * as ImagePicker from "expo-image-picker";
 import { identifyFish } from "../services/fishIdentificationService";
+import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export default function CameraScreen() {
-  const [hasPermission, setHasPermission] = useState(null);
-  const [cameraType, setCameraType] = useState(Camera.Constants.Type.back);
-  const [capturedImage, setCapturedImage] = useState(null);
-  const [identificationResult, setIdentificationResult] = useState(null);
+  const [facing, setFacing] = useState<CameraType>('back');
+  const [permission, requestPermission] = useCameraPermissions();
+  const [capturedImage, setCapturedImage] = useState<string | null>(null);
+  const [identificationResult, setIdentificationResult] = useState<any>(null);
+  const [isCaptured, setIsCaptured] = useState(false);
+  const navigation = useNavigation();
   const cameraRef = useRef(null);
 
-  React.useEffect(() => {
-    (async () => {
-      const { status } = await Camera.requestPermissionsAsync();
-      setHasPermission(status === "granted");
-    })();
-  }, []);
+  if (!permission) {
+    return <View />;
+  }
+
+  if (!permission.granted) {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.message}>We need your permission to show the camera</Text>
+        <TouchableOpacity style={styles.button} onPress={requestPermission}>
+          <Text style={styles.buttonText}>Grant Permission</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+
+  const toggleCameraFacing = () => {
+    setFacing(current => (current === 'back' ? 'front' : 'back'));
+  };
 
   const takePicture = async () => {
-    if (cameraRef.current) {
-      const photo = await cameraRef.current.takePictureAsync();
+    if (!cameraRef.current) return;
+    
+    try {
+      setIsCaptured(true);
+      
+      // Take the picture
+      const photo = await cameraRef.current.takePictureAsync({
+        quality: 1,
+        base64: false,
+        skipProcessing: true
+      });
+      
+      // Set the captured image
       setCapturedImage(photo.uri);
-      identifyFishInImage(photo.uri);
+      
+      // Identify the fish in the captured image
+      await identifyFishInImage(photo.uri);
+      
+      // Navigate to the FishInfo screen with the image URI
+      setTimeout(() => {
+        setIsCaptured(false);
+      }, 500);
+    } catch (error) {
+      console.error("Error taking picture:", error);
+      setIsCaptured(false);
     }
   };
 
@@ -34,13 +71,13 @@ export default function CameraScreen() {
       quality: 1,
     });
 
-    if (!result.cancelled) {
-      setCapturedImage(result.uri);
-      identifyFishInImage(result.uri);
+    if (!result.canceled) {
+      setCapturedImage(result.assets[0].uri);
+      identifyFishInImage(result.assets[0].uri);
     }
   };
-
-  const identifyFishInImage = async (imageUri) => {
+  //Make API Call to identify fish in image
+  const identifyFishInImage = async (imageUri: string) => {
     try {
       const result = await identifyFish(imageUri);
       setIdentificationResult(result);
@@ -48,13 +85,6 @@ export default function CameraScreen() {
       console.error("Error identifying fish:", error);
     }
   };
-
-  if (hasPermission === null) {
-    return <View />;
-  }
-  if (hasPermission === false) {
-    return <Text>No access to camera</Text>;
-  }
 
   return (
     <View style={styles.container}>
@@ -72,12 +102,6 @@ export default function CameraScreen() {
               <Text style={styles.resultText}>
                 Habitat: {identificationResult.habitat}
               </Text>
-              <Text style={styles.resultText}>
-                Size: {identificationResult.size}
-              </Text>
-              <Text style={styles.resultText}>
-                Fishing Tips: {identificationResult.fishingTips}
-              </Text>
             </View>
           )}
           <TouchableOpacity
@@ -88,16 +112,25 @@ export default function CameraScreen() {
           </TouchableOpacity>
         </View>
       ) : (
-        <Camera style={styles.camera} type={cameraType} ref={cameraRef}>
+        <CameraView 
+          style={styles.camera} 
+          facing={facing}
+          ref={cameraRef}
+        >
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button} onPress={takePicture}>
-              <Text style={styles.buttonText}>Take Picture</Text>
+            <TouchableOpacity style={styles.infoButton} onPress={() => navigation.navigate("FishInfo")}>
+              <Ionicons name="information-circle-outline" size={24} color="white" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={pickImage}>
-              <Text style={styles.buttonText}>Pick from Gallery</Text>
+            <TouchableOpacity style={styles.button} onPress={takePicture} disabled={isCaptured}>
+              <Ionicons name="camera" size={32} color="white" />
             </TouchableOpacity>
           </View>
-        </Camera>
+        </CameraView>
+      )}
+      {isCaptured && (
+        <View style={styles.processingOverlay}>
+          <Text style={styles.processingText}>Processing...</Text>
+        </View>
       )}
     </View>
   );
@@ -114,26 +147,31 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "transparent",
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     margin: 20,
   },
   button: {
-    backgroundColor: "white",
-    borderRadius: 5,
-    padding: 15,
-    paddingHorizontal: 20,
     alignSelf: "flex-end",
-    margin: 20,
+    alignItems: "center",
+    backgroundColor: "rgba(0, 120, 255, 0.8)",
+    borderRadius: 30,
+    padding: 15,
   },
-  buttonText: {
-    fontSize: 14,
-    fontWeight: "bold",
-    color: "black",
+  infoButton: {
+    alignSelf: "flex-end",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    borderRadius: 30,
+    padding: 10,
+  },
+  message: {
+    textAlign: 'center',
+    padding: 20,
   },
   previewContainer: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 20,
   },
   preview: {
@@ -142,13 +180,26 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   resultContainer: {
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backgroundColor: 'rgba(0,0,0,0.7)',
     padding: 20,
     borderRadius: 10,
     marginBottom: 20,
+    width: '100%',
   },
   resultText: {
     fontSize: 16,
+    color: 'white',
     marginBottom: 5,
+  },
+  processingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  processingText: {
+    color: "white",
+    fontSize: 18,
+    fontWeight: "bold",
   },
 });
