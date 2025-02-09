@@ -6,6 +6,8 @@ import { identifyFish } from "../services/fishIdentificationService"
 import { Ionicons } from "@expo/vector-icons"
 import { useNavigation } from "@react-navigation/native"
 import { useZone } from '../context/ZoneContext'
+import { Linking } from "react-native"
+
 
 // Fish name mappings for species identification
 const FISH_COMMON_NAMES: { [key: string]: string } = {
@@ -374,7 +376,7 @@ export default function CameraScreen() {
       ) : (
         <CameraView style={styles.camera} facing={facing} ref={cameraRef}>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.infoButton} onPress={() => navigation.navigate("FishInfo")}>
+            <TouchableOpacity style={styles.infoButton} onPress={() => Linking.openURL("https://www.quebec.ca/tourisme-et-loisirs/activites-sportives-et-de-plein-air/peche-sportive/versions-imprimables")}>
               <Ionicons name="information-circle-outline" size={24} color="white" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={takePicture} disabled={isCaptured}>
