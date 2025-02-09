@@ -37,7 +37,7 @@ export default function HistoryScreen() {
       <View style={styles.itemDetails}>
         <View style={styles.speciesContainer}>
           <Ionicons name="fish-outline" size={18} color="#008DA5" />
-          <Text style={styles.species}>{item.species}</Text>
+          <Text style={styles.species}>{typeof item.species === "object" ? item.species.name : item.species}</Text>
         </View>
         <Text style={styles.date}>{new Date(item.date).toLocaleString()}</Text>
       </View>
@@ -45,7 +45,7 @@ export default function HistoryScreen() {
         <Text style={styles.deleteButtonText}>Delete</Text>
       </TouchableOpacity>
     </View>
-  )
+  );
 
   return (
     <View style={styles.container}>
