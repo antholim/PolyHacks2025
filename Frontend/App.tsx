@@ -19,20 +19,25 @@ export default function App() {
             let iconName
 
             if (route.name === "Home") {
-              iconName = focused ? "home" : "home-outline"
+              iconName = focused ? "water" : "water-outline"
             } else if (route.name === "Camera") {
-              iconName = focused ? "camera" : "camera-outline"
+              iconName = focused ? "fish" : "fish-outline"
             } else if (route.name === "History") {
-              iconName = focused ? "list" : "list-outline"
+              iconName = focused ? "boat" : "boat-outline"
             }
 
             return <Ionicons name={iconName} size={size} color={color} />
           },
+          tabBarActiveTintColor: "#008DA5", // Teal color
+          tabBarInactiveTintColor: "gray",
+          tabBarStyle: {
+            backgroundColor: "#E6F3F5", // Light blue background
+          },
         })}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Camera" component={CameraScreen} />
-        <Tab.Screen name="History" component={HistoryScreen} />
+        <Tab.Screen name="Home" component={HomeScreen} options={{ title: "AquaScan" }} />
+        <Tab.Screen name="Camera" component={CameraScreen} options={{ title: "Identify" }} />
+        <Tab.Screen name="History" component={HistoryScreen} options={{ title: "Catches" }} />
       </Tab.Navigator>
     </NavigationContainer>
   )

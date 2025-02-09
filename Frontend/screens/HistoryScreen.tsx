@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity } from "react-native"
 import AsyncStorage from "@react-native-async-storage/async-storage"
+import { Ionicons } from "@expo/vector-icons"
 
 export default function HistoryScreen() {
   const [history, setHistory] = useState([])
@@ -34,7 +35,10 @@ export default function HistoryScreen() {
     <View style={styles.historyItem}>
       <Image source={{ uri: item.imageUri }} style={styles.thumbnail} />
       <View style={styles.itemDetails}>
-        <Text style={styles.species}>{item.species}</Text>
+        <View style={styles.speciesContainer}>
+          <Ionicons name="fish-outline" size={18} color="#008DA5" />
+          <Text style={styles.species}>{item.species}</Text>
+        </View>
         <Text style={styles.date}>{new Date(item.date).toLocaleString()}</Text>
       </View>
       <TouchableOpacity style={styles.deleteButton} onPress={() => deleteHistoryItem(item.id)}>
@@ -45,7 +49,7 @@ export default function HistoryScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Identification History</Text>
+      <Text style={styles.title}>Catch History</Text>
       <FlatList
         data={history}
         renderItem={renderHistoryItem}
@@ -60,6 +64,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: "#E6F3F5", // Light blue background
   },
   title: {
     fontSize: 24,
@@ -91,6 +96,11 @@ const styles = StyleSheet.create({
   itemDetails: {
     flex: 1,
   },
+  speciesContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 5,
+  },
   species: {
     fontSize: 18,
     fontWeight: "bold",
@@ -101,7 +111,7 @@ const styles = StyleSheet.create({
     color: "#666",
   },
   deleteButton: {
-    backgroundColor: "red",
+    backgroundColor: "#FF6B6B", // Coral red color
     padding: 10,
     borderRadius: 5,
   },
@@ -110,3 +120,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 })
+
