@@ -4,12 +4,8 @@ import { CameraView, type CameraType, useCameraPermissions } from "expo-camera"
 import * as ImagePicker from "expo-image-picker"
 import { identifyFish } from "../services/fishIdentificationService"
 import { Ionicons } from "@expo/vector-icons"
-import { useNavigation, useRoute } from "@react-navigation/native"
-import type { RouteProp } from "@react-navigation/native"
-
-type HomeScreen = RouteProp<{
-  HomeScreen: { selectedZone?: number }
-}, 'HomeScreen'>
+import { useNavigation } from "@react-navigation/native"
+import { useZone } from '../context/ZoneContext'
 
 // Fish name mappings for species identification
 const FISH_COMMON_NAMES: { [key: string]: string } = {
@@ -58,8 +54,7 @@ export default function CameraScreen() {
   const [identificationResult, setIdentificationResult] = useState<any>(null)
   const [isCaptured, setIsCaptured] = useState(false)
   const navigation = useNavigation()
-  const route = useRoute<HomeScreen>()
-  const selectedZone = route.params?.selectedZone
+  const { selectedZone } = useZone()
   const cameraRef = useRef(null)
 
   const checkFishingRegulations = (
@@ -70,7 +65,10 @@ export default function CameraScreen() {
   ): RegulationResult => {
     const zoneKey = `zone_${zoneNumber}`;
     const zone = zonesData[zoneKey];
-    
+    console.log(scientificName)
+    console.log(commonName)
+    console.log(zoneNumber)
+    console.log(zonesData)
     if (!zone) {
       return {
         isAllowed: false,
@@ -195,11 +193,19 @@ export default function CameraScreen() {
   const identifyFishInImage = async (imageUri: string) => {
     try {
       const result = await identifyFish(imageUri)
+      console.log("API Result:", result)
+      console.log(selectedZone, "selectedZone")
       if (!selectedZone) {
         setIdentificationResult(result);
         return;
       }
       
+      if (!result.scientificName) {
+        console.log("Missing scientific name in result")
+        setIdentificationResult(result);
+        return;
+      }
+      console.log()
       const regulations = checkFishingRegulations(
         result.scientificName,
         result.commonName,

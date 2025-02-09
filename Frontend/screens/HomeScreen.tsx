@@ -5,12 +5,13 @@ import { Image } from "expo-image";
 import { GestureDetector, Gesture, GestureHandlerRootView } from "react-native-gesture-handler";
 import Animated, { useAnimatedStyle, useSharedValue } from "react-native-reanimated";
 import { LinearGradient } from "expo-linear-gradient";
+import { useZone } from '../context/ZoneContext';
 
 const ZONES = Array.from({ length: 29 }, (_, i) => i + 1);
 const { width } = Dimensions.get("window");
 
 export default function HomeScreen() {
-  const [selectedZone, setSelectedZone] = useState<number | null>(null);
+  const { selectedZone, setSelectedZone } = useZone();
 
   const scale = useSharedValue(1);
   const savedScale = useSharedValue(1);
@@ -52,6 +53,10 @@ export default function HomeScreen() {
       { scale: scale.value },
     ] as const,
   }));
+
+  const handleZoneSelection = (zone: number) => {
+    setSelectedZone(zone);
+  };
 
   return (
       <GestureHandlerRootView style={{ flex: 1 }}>
@@ -97,7 +102,7 @@ export default function HomeScreen() {
                   <TouchableOpacity
                       key={zone}
                       style={[styles.zoneButton, selectedZone === zone && styles.selectedZone]}
-                      onPress={() => setSelectedZone(zone)}
+                      onPress={() => handleZoneSelection(zone)}
                   >
                     <Text style={[styles.zoneText, selectedZone === zone && styles.selectedZoneText]}>{zone}</Text>
                   </TouchableOpacity>
