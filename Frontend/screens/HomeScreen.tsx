@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Text, StyleSheet, View, ScrollView, Image, TouchableOpacity, Dimensions } from "react-native";
+import { Text, StyleSheet, View, ScrollView, TouchableOpacity, Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { ReactNativeZoomableView } from "@dudigital/react-native-zoomable-view";
+import { Image } from 'expo-image';
+import { GestureDetector, Gesture, GestureHandlerRootView } from 'react-native-gesture-handler';
+import Animated, { useAnimatedStyle, useSharedValue } from 'react-native-reanimated';
 
 // Importing local image from assets
 const ZONES = Array.from({ length: 29 }, (_, i) => i + 1);
@@ -9,56 +11,95 @@ const { width } = Dimensions.get("window");
 
 export default function HomeScreen() {
   const [selectedZone, setSelectedZone] = useState<number | null>(null);
+  
+  const scale = useSharedValue(1);
+  const savedScale = useSharedValue(1);
+  const positionX = useSharedValue(0);
+  const positionY = useSharedValue(0);
+  const savedX = useSharedValue(0);
+  const savedY = useSharedValue(0);
+
+  const MAX_ZOOM = 6;
+  const MIN_ZOOM = 1;
+
+  const pinchGesture = Gesture.Pinch()
+    .onUpdate((e) => {
+      const newScale = savedScale.value * e.scale;
+      if (newScale >= MIN_ZOOM && newScale <= MAX_ZOOM) {
+        scale.value = newScale;
+      }
+    })
+    .onEnd(() => {
+      savedScale.value = scale.value;
+    });
+
+  const panGesture = Gesture.Pan()
+    .onUpdate((e) => {
+      positionX.value = savedX.value + e.translationX;
+      positionY.value = savedY.value + e.translationY;
+    })
+    .onEnd(() => {
+      savedX.value = positionX.value;
+      savedY.value = positionY.value;
+    });
+
+  const composed = Gesture.Simultaneous(pinchGesture, panGesture);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    transform: [
+      { translateX: positionX.value },
+      { translateY: positionY.value },
+      { scale: scale.value },
+    ],
+  }));
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Welcome to AquaScan</Text>
-        <Text style={styles.subtitle}>Select your fishing zone</Text>
-      </View>
-
-      {/* Map with Zoom */}
-      <View style={styles.mapContainer}>
-        <ReactNativeZoomableView
-          maxZoom={2}
-          minZoom={1}
-          zoomStep={0.5}
-          initialZoom={1}
-          bindToBorders={true}
-          style={styles.zoomableView}
-        >
-          <Image 
-            source={require("../assets/carte-generale-zones.png")} 
-            style={styles.map} 
-            resizeMode="contain" 
-            onError={(e) => console.log("Image failed to load", e.nativeEvent.error)}
-          />
-        </ReactNativeZoomableView>
-      </View>
-
-      {/* Zone Selector */}
-      <View style={styles.zoneSelector}>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {ZONES.map((zone) => (
-            <TouchableOpacity
-              key={zone}
-              style={[styles.zoneButton, selectedZone === zone && styles.selectedZone]}
-              onPress={() => setSelectedZone(zone)}
-            >
-              <Text style={[styles.zoneText, selectedZone === zone && styles.selectedZoneText]}>{zone}</Text>
-            </TouchableOpacity>
-          ))}
-        </ScrollView>
-      </View>
-
-      {/* Selected Zone Info */}
-      {selectedZone && (
-        <View style={styles.selectedZoneInfo}>
-          <Ionicons name="location" size={24} color="#008DA5" />
-          <Text style={styles.selectedZoneTitle}>Zone {selectedZone} Selected</Text>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ScrollView style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.title}>Welcome to AquaScan</Text>
+          <Text style={styles.subtitle}>Select your fishing zone</Text>
         </View>
-      )}
-    </ScrollView>
+
+        <View style={styles.mapContainer}>
+          <GestureDetector gesture={composed}>
+            <Animated.View style={[styles.mapWrapper, animatedStyle]}>
+              <Image
+                style={styles.map}
+                source={require("../assets/carte-generale-zones.png")}
+                contentFit="contain"
+                onError={(error) => {
+                  console.error("Image failed to load:", error);
+                }}
+              />
+            </Animated.View>
+          </GestureDetector>
+        </View>
+
+        {/* Zone Selector */}
+        <View style={styles.zoneSelector}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            {ZONES.map((zone) => (
+              <TouchableOpacity
+                key={zone}
+                style={[styles.zoneButton, selectedZone === zone && styles.selectedZone]}
+                onPress={() => setSelectedZone(zone)}
+              >
+                <Text style={[styles.zoneText, selectedZone === zone && styles.selectedZoneText]}>{zone}</Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        </View>
+
+        {/* Selected Zone Info */}
+        {selectedZone && (
+          <View style={styles.selectedZoneInfo}>
+            <Ionicons name="location" size={24} color="#008DA5" />
+            <Text style={styles.selectedZoneTitle}>Zone {selectedZone} Selected</Text>
+          </View>
+        )}
+      </ScrollView>
+    </GestureHandlerRootView>
   );
 }
 
@@ -83,15 +124,16 @@ const styles = StyleSheet.create({
   },
   mapContainer: {
     width: width,
-    height: width,
+    height: width * 1.2,
     backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
+    overflow: 'hidden',
     marginBottom: 16,
   },
-  zoomableView: {
-    width: "100%",
-    height: "100%",
+  mapWrapper: {
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   map: {
     width: "100%",
