@@ -49,6 +49,7 @@ export default function CameraScreen() {
 
       // Set the captured image
       setCapturedImage(photo.uri)
+      console.log(photo.uri,"PHOTO")
 
       // Identify the fish in the captured image
       await identifyFishInImage(photo.uri)
