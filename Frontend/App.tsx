@@ -33,7 +33,7 @@ export default function App() {
             tabBarActiveTintColor: "#008DA5", // Teal color
             tabBarInactiveTintColor: "gray",
             tabBarStyle: {
-              backgroundColor: "#E6F3F5", // Light blue background
+              backgroundColor: "#fff", // Light blue background
             },
           })}
         >
