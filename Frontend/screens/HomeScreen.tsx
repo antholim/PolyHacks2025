@@ -49,6 +49,15 @@ export default function HomeScreen() {
     transform: [{ translateX: positionX.value }, { translateY: positionY.value }, { scale: scale.value }] as const,
   }))
 
+  const resetMap = () => {
+    scale.value = 1;
+    savedScale.value = 1;
+    positionX.value = 0;
+    positionY.value = 0;
+    savedX.value = 0;
+    savedY.value = 0;
+  };
+
   return (
       <GestureHandlerRootView style={{ flex: 1 }}>
         <ScrollView style={styles.container}>
@@ -66,11 +75,14 @@ export default function HomeScreen() {
                     source={require("../assets/carte-generale-zones.png")}
                     contentFit="contain"
                     onError={(error) => {
-                      console.error("Image failed to load:", error)
+                      console.error("Image failed to load:", error);
                     }}
                 />
               </Animated.View>
             </GestureDetector>
+            <TouchableOpacity style={styles.resetButton} onPress={resetMap}>
+              <Ionicons name="refresh" size={24} color="#008DA5" />
+            </TouchableOpacity>
           </View>
 
           <View style={styles.zoneSelectorContainer}>
@@ -218,7 +230,7 @@ const styles = StyleSheet.create({
     left: 0,
     top: 0,
     bottom: 0,
-    width: 500,
+    width: 800,
     zIndex: 1,
   },
   gradientRight: {
@@ -226,8 +238,18 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     bottom: 0,
-    width: 500,
+    width: 800,
     zIndex: 1,
   },
+
+  resetButton: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    borderRadius: 20,
+    padding: 8,
+  },
+
 })
 
