@@ -363,13 +363,13 @@ export default function CameraScreen() {
                 setIdentificationResult(null)
               }}
             >
-              <Text style={[styles.buttonText, { color: 'white' }]}>Take Another Picture</Text>
+              <Text style={[styles.buttonText, { color: 'white' }]}>Try Again</Text>
             </TouchableOpacity>
             <TouchableOpacity 
               style={styles.button} 
               onPress={pickImage}
             >
-              <Text style={[styles.buttonText, { color: 'white' }]}>Choose from Gallery</Text>
+              <Text style={[styles.buttonText, { color: 'white' }]}>From Gallery</Text>
             </TouchableOpacity>
           </View>
         </View>
