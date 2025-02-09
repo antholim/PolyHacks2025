@@ -7,52 +7,57 @@ import Animated, { useAnimatedStyle, useSharedValue } from "react-native-reanima
 import { LinearGradient } from "expo-linear-gradient";
 import { useZone } from '../context/ZoneContext';
 
-const ZONES = Array.from({ length: 29 }, (_, i) => i + 1);
-const { width } = Dimensions.get("window");
+const ZONES = Array.from({ length: 29 }, (_, i) => i + 1)
+const { width } = Dimensions.get("window")
 
 export default function HomeScreen() {
   const { selectedZone, setSelectedZone } = useZone();
 
-  const scale = useSharedValue(1);
-  const savedScale = useSharedValue(1);
-  const positionX = useSharedValue(0);
-  const positionY = useSharedValue(0);
-  const savedX = useSharedValue(0);
-  const savedY = useSharedValue(0);
+  const scale = useSharedValue(1)
+  const savedScale = useSharedValue(1)
+  const positionX = useSharedValue(0)
+  const positionY = useSharedValue(0)
+  const savedX = useSharedValue(0)
+  const savedY = useSharedValue(0)
 
-  const MAX_ZOOM = 6;
-  const MIN_ZOOM = 1;
+  const MAX_ZOOM = 6
+  const MIN_ZOOM = 1
 
   const pinchGesture = Gesture.Pinch()
       .onUpdate((e) => {
-        const newScale = savedScale.value * e.scale;
+        const newScale = savedScale.value * e.scale
         if (newScale >= MIN_ZOOM && newScale <= MAX_ZOOM) {
-          scale.value = newScale;
+          scale.value = newScale
         }
       })
       .onEnd(() => {
-        savedScale.value = scale.value;
-      });
+        savedScale.value = scale.value
+      })
 
   const panGesture = Gesture.Pan()
       .onUpdate((e) => {
-        positionX.value = savedX.value + e.translationX;
-        positionY.value = savedY.value + e.translationY;
+        positionX.value = savedX.value + e.translationX
+        positionY.value = savedY.value + e.translationY
       })
       .onEnd(() => {
-        savedX.value = positionX.value;
-        savedY.value = positionY.value;
-      });
+        savedX.value = positionX.value
+        savedY.value = positionY.value
+      })
 
-  const composed = Gesture.Simultaneous(pinchGesture, panGesture);
+  const composed = Gesture.Simultaneous(pinchGesture, panGesture)
 
   const animatedStyle = useAnimatedStyle(() => ({
-    transform: [
-      { translateX: positionX.value },
-      { translateY: positionY.value },
-      { scale: scale.value },
-    ] as const,
-  }));
+    transform: [{ translateX: positionX.value }, { translateY: positionY.value }, { scale: scale.value }] as const,
+  }))
+
+  const resetMap = () => {
+    scale.value = 1;
+    savedScale.value = 1;
+    positionX.value = 0;
+    positionY.value = 0;
+    savedX.value = 0;
+    savedY.value = 0;
+  };
 
   const handleZoneSelection = (zone: number) => {
     setSelectedZone(zone);
@@ -80,22 +85,25 @@ export default function HomeScreen() {
                 />
               </Animated.View>
             </GestureDetector>
+            <TouchableOpacity style={styles.resetButton} onPress={resetMap}>
+              <Ionicons name="refresh" size={24} color="#008DA5" />
+            </TouchableOpacity>
           </View>
 
           <View style={styles.zoneSelectorContainer}>
             <LinearGradient
-                colors={["rgba(230, 243, 245, 1)", "rgba(230, 243, 245, 0)"]}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 0.1, y: 0 }}
-                style={styles.gradientLeft}
-                pointerEvents="none"
+              colors={["rgba(230, 243, 245, 1)", "rgba(230, 243, 245, 0)"]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 0.1, y: 0 }}
+              style={styles.gradientLeft}
+              pointerEvents="none"
             />
             <LinearGradient
-                colors={["rgba(230, 243, 245, 0)", "rgba(230, 243, 245, 1)"]}
-                start={{ x: 0.9, y: 0 }}
-                end={{ x: 1, y: 0 }}
-                style={styles.gradientRight}
-                pointerEvents="none"
+              colors={["rgba(230, 243, 245, 0)", "rgba(230, 243, 245, 1)"]}
+              start={{ x: 0.9, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.gradientRight}
+              pointerEvents="none"
             />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.zoneSelector}>
               {ZONES.map((zone) => (
@@ -104,7 +112,11 @@ export default function HomeScreen() {
                       style={[styles.zoneButton, selectedZone === zone && styles.selectedZone]}
                       onPress={() => handleZoneSelection(zone)}
                   >
-                    <Text style={[styles.zoneText, selectedZone === zone && styles.selectedZoneText]}>{zone}</Text>
+                    {selectedZone === zone ? (
+                        <Ionicons name="fish" size={24} color="#fff" />
+                    ) : (
+                        <Text style={[styles.zoneText, selectedZone === zone && styles.selectedZoneText]}>{zone}</Text>
+                    )}
                   </TouchableOpacity>
               ))}
             </ScrollView>
@@ -125,7 +137,7 @@ export default function HomeScreen() {
           </View>
         </ScrollView>
       </GestureHandlerRootView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -223,7 +235,7 @@ const styles = StyleSheet.create({
     left: 0,
     top: 0,
     bottom: 0,
-    width: 680,
+    width: 800,
     zIndex: 1,
   },
   gradientRight: {
@@ -231,7 +243,18 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     bottom: 0,
-    width: 680,
+    width: 800,
     zIndex: 1,
   },
-});
+
+  resetButton: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    borderRadius: 20,
+    padding: 8,
+  },
+
+})
+
